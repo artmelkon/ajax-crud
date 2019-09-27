@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="display-3 text-center">AJAX CRUD</h1>
+    <div id="container" class="col-md-6 offset-md-3 text-center">
+    <h2>Search The Database</h2>
+    <form action="">
+      <input type="text" class="form-control" name="search" id="search" placeholder="Search Inventory"><br>
+    </form>
+      <h2 class="bg-success" id="result"></h2>
+  </div>
+  <!-- ========================================
+    INSERTING DATA INTO DATABASE
+  ============================================= -->
+  <div class="col-md-6 offset-md-3">   
+    <form method="post" id="addCarsForm" action="car-input.php" class="form-group">
+      <label>Insert Car Brand</label>
+      <input type="text" name="car_brand" id="car-brand" class="form-control mb-5" required/><br>
+      <label>Insert Model</label>
+      <input type="text" name="car_model" id="car-model" class="form-control mb-5" required/><br>
+      <button type="submit" class="btn btn-primary">Add Car to DB</button>
+    </form>
+    <div class="col-xs-6 offset-xs-3">
+      <div class="input-result"></div>
+    </div>
+  </div>
+    <!-- ========================================
+      INSERTING DATA INTO DATABASE
+    ============================================= -->
+    <div class="row">
+      <div class="col-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cars</th>
+            </tr>
+          </thead>
+          <tbody id="show-cars">
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col-6"> <!-- action container-->
+        <div id="action-container"></div>
+      </div>  
+    </div>
+  </div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+Hello Ajax,
+this is printed from a text file.

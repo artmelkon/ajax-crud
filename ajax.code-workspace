@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/Applications/XAMPP/xamppfiles/htdocs/Web/jquery-sanbox"
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"files.autoSaveDelay": 1000,
+		"editor.fontSize": 9.5,
+		"editor.autoIndent": true,
+		"editor.wordWrapColumn": 80,
+		"editor.wrappingIndent": "indent",
+		"editor.tabSize": 2,
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "jquery-sanbox"
+	}
+}
